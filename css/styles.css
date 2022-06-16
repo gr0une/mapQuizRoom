@@ -8,8 +8,14 @@ i {
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: 'Maiden Orange';
+    font-size: 24px;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
 }
 
 svg{
@@ -26,7 +32,7 @@ svg{
     align-items: center;
 }
 
-    .card {
+    /* .card {
         padding: 20px 20px;
         position: absolute;
         display: fixed;
@@ -34,27 +40,7 @@ svg{
         right: 10%;
         width: 700px;
         background-color: #51515120;
-        backdrop-filter: blur(2px);
-        border-radius: 10px;
-        transition: all 0.75s linear;
-    }
-
-        h2 {
-            font-size: 62px;
-        }
-
-        .insideCard {
-            margin: 0 0 0 32px;
-        }
-
-            button {
-                margin: 20px 0;
-                padding: 5px 10px;
-                border-radius: 0;
-                color: #ffe800;
-                background-color: #003a8a;
-                border-radius: 5px;
-            }
+    } */
 
     .hide {
         opacity: 0;
@@ -71,3 +57,59 @@ svg{
         transform: scale(1.5);
     }
         
+/* ######## */
+
+.card {
+    border-radius: 20px;
+    padding: 1% 2%;
+    border: 1px solid #121e51;
+    padding: 20px 20px;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(0, -50%);
+    right: 20%;
+    border-radius: 10px;
+}
+
+    div.cardHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        span {
+            margin: 10px 0;
+        }
+
+    div.cardBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .infos {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+            img {
+                margin-right: 20px;
+            }
+
+        .booking {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+            .booking a {
+                color: #ffe800;
+                text-decoration: none;
+                padding: 12px 40px;
+                background-color:#003a8a;
+                box-shadow: #121e51 5px 5px 0px;
+            }

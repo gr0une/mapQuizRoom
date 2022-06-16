@@ -1,7 +1,5 @@
 const allPins = document.querySelectorAll('.pin')
-const arrows = document.querySelectorAll('.arrow')
-const rightArrow = document.querySelector('#rightArrow')
-const leftArrow = document.querySelector('#leftArrow')
+
 let cities = [
     {
         "pin": 'pinMontpellier',
