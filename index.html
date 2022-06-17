@@ -30,7 +30,6 @@
             </div>
         </div>
         <!-- Close villeCard Cherbourg -->
-
         <div id="cardLille" class="card hide">
           <h2>Welcome to Lille&nbsp;!</h2>
           <p>Voici, les informations a connaitre sur Quiz Room Lille :)</p>
@@ -48,8 +47,48 @@
           <p>Voici, les informations a connaitre sur Quiz Roome Herblay :)</p>
         </div>
         <div id="cardParis" class="card hide">
-          <h2>Welcome to Paris !</h2>
-          <p>Voici, les informations a connaitre sur Quiz Roome Paris :)</p>
+            <div class="cardHeader">
+                <h3>Quiz Room Lille</h3>
+                <span>Titre pour votre carte</span>
+            </div>
+            <div class="choix">
+                <a class="bouton tablink open" onclick="openCity(event, 'villette')">Paris La Villette</a>
+                <a class="bouton tablink" onclick="openCity(event, 'odeon')">Paris Odéon</a>
+                <a class="bouton tablink" onclick="openCity(event, 'nation')">Nation</a>
+              </div>
+            <div class="cardBody city" id="villette">
+                <div>
+                    <div class="infos"><img src="/images/iconCalendar.svg" alt=""> Ouvert 7/7</div>
+                    <div class="infos"><img src="/images/iconPin.svg" alt="">Ourcq, 75019 Paris</div>
+                    <div class="infos"><img src="/images/iconPhone.svg" alt="">03 20 09 74 73</div>
+                    <div class="infos"><img src="/images/iconMail.svg" alt=""><a href="mailto:villette@quiz-room.com">villette@quiz-room.com</a></div>
+                </div>
+               <div class="booking">
+                <a href="">Réserver</a>
+               </div>
+            </div>
+            <div class="cardBody city" id="odeon" style="display:none">
+                <div>
+                    <div class="infos"><img src="/images/iconCalendar.svg" alt=""> Ouvert 7/7</div>
+                    <div class="infos"><img src="/images/iconPin.svg" alt="">Génégaud, 75006 Paris</div>
+                    <div class="infos"><img src="/images/iconPhone.svg" alt="">03 20 09 74 73</div>
+                    <div class="infos"><img src="/images/iconMail.svg" alt=""><a href="mailto:odeon@quiz-room.com">odeon@quiz-room.com</a></div>
+                </div>
+               <div class="booking">
+                <a href="">Réserver</a>
+               </div>
+            </div>
+            <div class="cardBody city" id="nation" style="display:none">
+                <div>
+                    <div class="infos"><img src="/images/iconCalendar.svg" alt=""> Ouvert 7/7</div>
+                    <div class="infos"><img src="/images/iconPin.svg" alt="">Voltaire, 75011 Paris</div>
+                    <div class="infos"><img src="/images/iconPhone.svg" alt="">03 20 09 74 73</div>
+                    <div class="infos"><img src="/images/iconMail.svg" alt=""><a href="mailto:nation@quiz-room.com">nation@quiz-room.com</a></div>
+                </div>
+               <div class="booking">
+                <a href="">Réserver</a>
+               </div>
+            </div>
         </div>
         <div id="cardRennes" class="card hide">
           <h2>Welcome to Rennes !</h2>

@@ -61,9 +61,7 @@ svg{
 
 .card {
     border-radius: 20px;
-    padding: 1% 2%;
     border: 1px solid #121e51;
-    padding: 20px 20px;
     position: absolute;
     top: 50%;  
     left: 50%; 
@@ -84,6 +82,54 @@ svg{
 
         span {
             margin: 10px 0;
+        }
+
+        .choix {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #121e51;
+            width: 100%;
+        }
+
+        .bouton {
+            border: none;
+            background-color: #121e51;
+            color: #fff;
+            padding: 10px 25px;
+        }
+
+            .bouton:hover {
+                background-color: #ffe800;
+                cursor: pointer;
+            }
+
+        .open {
+            background-color: #003a8a;
+        }
+
+        .choix {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #121e51;
+            width: 100%;
+        }
+
+        .bouton {
+            border: none;
+            background-color: #121e51;
+            color: #fff;
+            padding: 10px 25px;
+        }
+
+            .bouton:hover {
+                background-color: #ffe800;
+                cursor: pointer;
+            }
+
+        .open {
+            background-color: #003a8a;
         }
 
     div.cardBody {
