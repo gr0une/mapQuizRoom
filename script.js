@@ -1,6 +1,12 @@
 const allPins = document.querySelectorAll(".pin");
+const closeCross = document.querySelectorAll(".closeCross") 
+const allCards =  document.querySelectorAll(".card")
 
 let cities = [
+  {
+    pin: "pinDefault",
+    card: "cardDefault"
+  },
   {
     pin: "pinMontpellier",
     card: "cardMontpellier",
@@ -106,12 +112,14 @@ allPins.forEach(function (clickedPin) {
     );
     let currentCard = document.querySelector(`#${cities[indexSelected].card}`);
     currentCard.classList.remove("hide");
-    let previousCard = document.querySelector(
-      `#${cities[indexSelected - 1].card}`
-    );
-    let nextCard = document.querySelector(`#${cities[indexSelected + 1].card}`);
+    // let previousCard = document.querySelector(
+    //   `#${cities[indexSelected - 1].card}`
+    // );
+    // let nextCard = document.querySelector(`#${cities[indexSelected + 1].card}`);
   });
 });
+
+// Choix du Quiz Room à Paris ###########
 
 function openCity(cityName) {
   const city = document.getElementsByClassName("city");
@@ -134,6 +142,20 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "flex";
   evt.currentTarget.className += " open";
 }
+
+// Croix pour fermer carte de Ville #######
+
+closeCross.forEach(function (clickedCross){
+  clickedCross.addEventListener('click', function (e) {
+    e.preventDefault;
+    for (let i = 0; i <= Object.keys(cities).length - 1; i++) {
+      let cityCard = document.querySelector(`#${cities[i].card}`);
+      cityCard.classList.add("hide");
+    }
+    let cityDefault = document.querySelector(`#${cities[0].card}`);
+      cityDefault.classList.remove("hide");
+  })
+})
 
 // const test = clickedPin.classList.item(0)
 // console.log(`${test}`)
