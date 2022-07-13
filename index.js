@@ -9,5 +9,4 @@ app.get('/', (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, () => {
-    console.log("APP IS LISTENING ON PORT 3000");
   });
