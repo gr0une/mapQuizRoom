@@ -42,15 +42,13 @@ svg{
     margin: 50px;
 }
 
-#map {
-    width: 500px;
-    height: 500px;
+/* #map {
+
 }
 
-#map img {
-    width: 500px;
-    height: 500px;
-}
+#cards {
+
+} */
 
 #main {
     height: 100vh;
@@ -86,14 +84,6 @@ svg{
     transform: translate(0, -50%);
     width: 430px;
 }
-
-    .cardHeaderDefault{
-        
-    }
-
-    .cardBodyDefault {
-
-    }
 
 .card {
     position: absolute;
