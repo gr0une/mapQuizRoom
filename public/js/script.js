@@ -98,6 +98,7 @@ let cities = [
   },
 ];
 
+const cardsWrapper = document.querySelector("#cards");
 const cards = cities.card;
 const pins = cities.pin;
 
@@ -112,10 +113,7 @@ allPins.forEach(function (clickedPin) {
     );
     let currentCard = document.querySelector(`#${cities[indexSelected].card}`);
     currentCard.classList.remove("hide");
-    // let previousCard = document.querySelector(
-    //   `#${cities[indexSelected - 1].card}`
-    // );
-    // let nextCard = document.querySelector(`#${cities[indexSelected + 1].card}`);
+    cardsWrapper.style("z-index", 1);
   });
 });
 
@@ -156,33 +154,3 @@ closeCross.forEach(function (clickedCross){
       cityDefault.classList.remove("hide");
   })
 })
-
-// const test = clickedPin.classList.item(0)
-// console.log(`${test}`)
-
-//     clickedRightArrow.addEventListener('click', function(){
-//         for (let i = 0; i <= Object.keys(cities).length-1; i++){
-//             let cityCard = document.querySelector(`#${cities[i].card}`)
-//             cityCard.classList.add('hide')
-//         }
-//         const indexSelected = cities.findIndex((city) => city.pin === clickedPin.id)
-//         let currentCard = document.querySelector(`#${cities[indexSelected].card}`)
-//         currentCard.classList.remove('hide')
-//     })
-// });
-
-// arrow : =>
-// arrows.forEach(function(clickedArrow){
-//     clickedArrow.addEventListener('click', function(){
-//         if (clickedArrow.id === 'leftArrow') {
-//             let currentCard = document.querySelector(`#${cities[indexSelected+1].card}`)
-//             currentCard.classList.add('hide')
-//             previousCard.classList.remove('hide')
-//         }
-//         else {
-//             let currentCard = document.querySelector(`#${cities[indexSelected-1].card}`)
-//             currentCard.classList.add('hide')
-//             nextCard.classList.remove('hide')
-//         }
-//     })
-// })
