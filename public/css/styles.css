@@ -214,13 +214,14 @@ svg{
         justify-content: center;
         align-items: flex-start;
         z-index: 0;
+        width: 90%;
     }
 
     .card {
         box-shadow: #121e51 10px 10px 0 0;
         background-color: #fff;
         position: static;
-        margin: 30px;
+        width: 100%;
     }
     
     #main {
