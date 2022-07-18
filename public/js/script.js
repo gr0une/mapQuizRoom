@@ -98,7 +98,6 @@ let cities = [
   },
 ];
 
-const cardsWrapper = document.querySelector("#cards");
 const cards = cities.card;
 const pins = cities.pin;
 

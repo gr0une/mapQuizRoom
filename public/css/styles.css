@@ -110,6 +110,7 @@ svg{
             align-items: center;
             justify-content: center;
             background-color: #ffe800;
+            padding: 0 5px;
         }
 
             .closeCross {
@@ -135,9 +136,13 @@ svg{
             .choix {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: flex-start;
                 background-color: #121e51;
             }
+
+            .inComing {
+                pointer-events: none;
+              }
 
                 .bouton {
                     border: none;
@@ -189,13 +194,8 @@ svg{
                     background-color:#003a8a;
                     box-shadow: #121e51 5px 5px 0px;
                 }
-
-
                 
 @media (max-width: 1250px) { 
-
-    body {
-    }
 
     #map {
         width: 100%;
