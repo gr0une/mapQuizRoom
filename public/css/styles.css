@@ -178,9 +178,18 @@ svg{
             .infos {
                 display: flex;
                 align-items: center;
-                margin: 20px 0 20px 35px;
-                
+                margin: 10px 0 0 35px;
+                color: #121e51;
             }
+
+            .infos:first-of-type {
+                margin: 15px 0 0 35px;
+            }
+
+            .infos:last-of-type {
+                margin: 0 0 0 35px;
+            }
+
                 .infos img {
                     margin-right: 20px;
                 }
