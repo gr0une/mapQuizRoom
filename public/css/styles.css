@@ -85,6 +85,10 @@ svg{
         
 /* ######## */
 
+#cardDefault {
+    height: 400px;
+}
+
 .default {
     position: absolute;
     top: 50%;  
